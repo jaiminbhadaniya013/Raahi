@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <style>
+
+        footer{
+            height: 38vh;
+        }
+
+        .footer-lblock{
+            height: 100%;
+        }
+
+        header{
+            height: 80px;
+            position: fixed;
+            background-color: #f49619;
+            box-shadow: 0px 0px 30px #f49619;
+        }
+
+        .logo h1{
+            margin-top: 33px;
+        }
+
+        .logo h1:hover, nav a:hover{
+            color: whitesmoke;
+        }
+
+
+        nav{
+            margin-top: 10px;
+        }
+
+        main{
+            /* height: 100vh; */
+            width: 100%;
+            /* background-color: #faebd7; */
+            background-color: bisque;
+            background-image: url(images/bg-skulls.png);
+            margin-top: -20px;
+        }
+
+        .about-block1{
+            height: 91.8vh;
+            padding: 50px;
+            /* background-color: beige; */
+        }
+
+        .about-b1-title{
+            height: 110px;
+            width: 45rem;
+            /* background-color: burlywood; */
+            align-content: center;
+            font-size: 24px;
+            font-family: "Outfit", sans-serif;
+            letter-spacing: 1px;
+            justify-items: center;
+            padding-top: 100px;
+            display: grid;
+            place-self: center;
+            /* border-radius: 50px;
+            border: 5px solid;
+            border-color: brown; */
+         
+            h2{
+                transition: all 0.4s ease-in-out;
+            }
+
+            h2:hover{
+                color: #f49619;
+                transform: scale(105%);
+
+            }
+        }
+
+        .about-b1-content{
+            height: 31.5rem;
+            width: 70.5rem;
+            line-height: 40px;
+            text-align: justify;
+            font-family: "Alan Sans", sans-serif;
+            padding: 0px 70px 0px 60px;
+            display: grid;
+            place-self: center;
+
+            word-spacing: 2px;
+
+            p{
+                font-size: 22px;
+                padding-top: 13px;
+            }
+        }
+
+        .about-block2{
+            /* margin-top: -150px; */
+            height: 80.3vh;
+            /* background-color: burlywood;  */
+            align-content: center;
+        }
+
+        .about-b2-title{
+            height: 110px;
+            width: 45rem;
+            /* background-color: burlywood; */
+            align-content: center;
+            font-size: 25px;
+            font-family: "Outfit", sans-serif;
+            letter-spacing: 1px;
+            justify-items: center;
+            /* margin-top: 80px; */
+            display: grid;
+            place-self: center;    
+            /* margin-top: 150px;         */
+
+            h2{
+                transition: all 0.4s ease-in-out;
+            }
+
+            h2:hover{
+                color: #f49619;
+                transform: scale(105%);
+
+            }
+        }
+
+        .about-b2-content{
+            height: 26.5rem;
+            width: 64.8rem;
+            /* background-color: chocolate; */
+            /* font-size: 45px; */
+            text-align: center;
+            /* font-family: "Afacad Flux", sans-serif; */
+            font-family: "Alan Sans", sans-serif;
+            /* align-content: center; */
+            padding: 0px 0px 0px 0px;
+            margin: 50px 0px 0px 0px;
+            display: grid;
+            place-self: center;
+
+            /* border: 3px solid burlywood; */
+            word-spacing: 2px;
+            /* background-color: rgba(250, 235, 215, 0.407); */
+            /* box-shadow: 10px 10px 20px burlywood; */
+
+            p{
+                font-size: 24px;
+                padding-top: 10px;
+            }
+        }   
+
+        .about-b2-mainbox{
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-b2-box1, .about-b2-box2, .about-b2-box3{
+            height: 10rem;
+            width: 10rem;
+            /* background-color: aliceblue; */
+            justify-items: center;
+            margin: 0px 50px;
+            transition: all 0.4s ease-in-out;
+
+            h3{
+                font-size: 35px;
+                margin-left: 10px;
+                margin-bottom: 0px;
+            }
+
+            h4{
+                font-size: 20px;
+            }
+        }
+
+        .about-b2-box1:hover, .about-b2-box2:hover, .about-b2-box3:hover{
+            color: #f49619;
+            transform: scale(105%);
+
+        }
+
+        .about-block3{
+            height: 96.1vh;
+            /* background-color: wheat;  */
+        }
+
+        .about-b3-title{
+            height: 110px;
+            width: 65rem;
+            /* background-color: burlywood; */
+            align-content: center;
+            font-size: 25px;
+            font-family: "Outfit", sans-serif;
+            letter-spacing: 1px;
+            justify-items: center;
+            /* margin-top: 80px; */
+            display: grid;
+            place-self: center;    
+            margin-top: 80px; 
+            
+            h2{
+                transition: all 0.4s ease-in-out;
+            }
+
+            h2:hover{
+                color: #f49619;
+                transform: scale(105%);
+
+            }
+        }
+
+        .about-b3-content{
+            height: 31.5rem;
+            width: 72.5rem;
+            line-height: 40px;
+            text-align: justify;
+            font-family: "Alan Sans", sans-serif;
+            padding: 0px 70px 0px 60px;
+            margin: 30px 0px 0px 0px;
+            display: grid;
+            place-self: center;
+            /* background-color: antiquewhite; */
+
+            word-spacing: 2px;
+
+            p{
+                font-size: 22px;
+                padding-top: 17px;
+            }
+
+            h6{
+                font-size: 26px;
+                text-align: center;
+                transition: all 0.4s ease-in-out;
+            }
+
+            h6:hover{
+                color: #f49619;
+                transform: scale(105%);
+            }
+        }   
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+         <div class="logo">
+            <h1>Raahi</h1>
+            <!-- <img src="" alt=""> -->
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a id="current-page" href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-block1">
+            <div class="about-b1-title">
+                <h2>Yeh Safar Kaise Shuru Hua?</h2>
+            </div>
+            <div class="about-b1-content">
+                <p>Raahi ki shuruat 2024 mein ek behtareen khayal se hui thi: ki har Hindustani ko apne desh ki asli rooh se milaya jaaye. Humare liye, safar sirf ek trip nahi, yeh ek gehra anubhav hai. Yeh ek mauka hai jahan aap India ke naye rang dekhte hain, yahan ki sanskriti jeete hain, aur apne liye anokhi kahaniyan banate hain. Raahi ke saath, aap na sirf nayi jagahon ko explore karte hain, balki apne andar ke musafir se bhi milte hain. Har safar aapko nayi soch, naye nazariye aur nayi yaadon se bhar deta hai. Yeh sirf ghoomna nahi, balki khud ko dhoondhne aur samjhne ka ek safar hai.
+                <br><br>
+                Humara manna hai, "Har qadam ek nayi kahaani," aur Raahi aapki us kahaani ko likhne ka rasta hai. Toh chaliye, desh ke saath-saath khud ki khoj ke is safar par nikalte hain.</p>
+            </div>
+        </section>
+
+        <section class="about-block2">
+            <div class="about-b2-title">
+                <h2>Raahi Par Bharosa Kyun?</h2>
+            </div>
+            <div class="about-b2-content">
+                <p>Hum sirf bade-bade vaade nahi karte, hum unpar khare utarte hain, aur woh bhi sirf India ke nazaaron mein. Humari safalta ka raaz un yaadon mein hai jo humne aapke liye banayi hain.</p>
+            
+                <div class="about-b2-mainbox">
+                    <div class="about-b2-box1">
+                        <h3>95%</h3>
+                        <h4>Yaatri Santusht</h4>
+                    </div>
+                    
+                    <div class="about-b2-box2">
+                        <h3>72+</h3>
+                        <h4>Khaas Safar</h4>
+                    </div>
+                    
+                    <div class="about-b2-box3">
+                        <h3>260+</h3>
+                        <h4>Anubhav</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-block3">
+            <div class="about-b3-title">
+                <h2>Humara Vaada: Har Safar, Desh Ka Safar</h2>
+            </div>
+            <div class="about-b3-content">
+                <p>Humari choti si team se lekar India bhar mein 500 se zyada local partners tak, hum sab milkar yeh koshish karte hain ki aapko sabse behtareen experience mile. Hum har safar ko aise plan karte hain jaise woh humara apna pehla safar ho. Hum sirf flights aur hotel ki booking nahi karte, balki subah ki chai se lekar raat ke aaram tak, har choti se choti baat par dhyan dete hain. Humari team is baat ko pakka karti hai ki aapka local guide sacha aur imandaar ho, aapka khaana saaf aur swaadist ho, aur aapki gaadi waqt par aapke intezaar mein khadi ho. Hum jaante hain ki safar mein ek choti si galti bhi mood kharab kar sakti hai, isliye hum har mushkil ko aap tak pahunchne se pehle hi theek kar dete hain. Raahi ke saath, aapko sirf aaram se safar karna hai, baaki ki saari zimmedari humari hai.</p>
+
+                <h6>Toh aaiye, aur apne desh mein apni nayi kahaani likhiye!</h6>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+            <section class="footer-lblock">
+                <div class="footer-location-desc">
+                    <h5>KASHMIR</h5>
+                    <p>Kashmir ki duniya dekho. Yeh woh jagah hai jahan <br> qudrat aur sukoon milte hain. Har waadi, har pahad, <br> aur har jheel ki apni ek anokhi kahaani hai.</p>
+                </div>
+                <div class="footer-nav">
+                    <h5>Navigations</h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-social">
+                    <h5>Social</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">X</a>
+                    <a href="#">Youtube</a>
+                </div>
+                <div class="footer-contact">
+                    <h5>Contact Us</h5>
+                    <a href="#">safar@raahi.com</a>
+                    <a href="#">+91 9834322322</a>
+                    <a href="#">S.G Highway, Ahmedabad</a>
+                </div>
+            </section>
+        </footer>
+        
+    </main>
+</body>
+</html>
